@@ -146,7 +146,7 @@ export default function SignUp() {
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value)
-    setEmailError(!/^[A-Z0-9._%+-]+@skcet\.ac\.in$/i.test(event.target.value))
+    setEmailError(false)
   }
 
   const navigate = useNavigate()
@@ -228,11 +228,7 @@ export default function SignUp() {
                     value={email}
                     onChange={handleEmailChange}
                     error={emailError}
-                    helperText={
-                      emailError
-                        ? "Please ensure your email address ends with '@skcet.ac.in'."
-                        : ''
-                    }
+                    helperText={emailError ? 'Please enter a valid email address.' : ''}
                   />
                 </Grid>
                 <Grid item xs={12} sm={7}>

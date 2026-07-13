@@ -113,9 +113,7 @@ export default function PassangerSignUp() {
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value)
-    if (!/^[A-Z0-9._%+-]+@skcet\.ac\.in$/i.test(event.target.value))
-      setErrors({ ...errors, emailError: 'Enter a valid SKCET email address.' })
-    else setErrors({ ...errors, emailError: '' })
+    setErrors({ ...errors, emailError: '' })
   }
 
   return (
@@ -158,7 +156,7 @@ export default function PassangerSignUp() {
                     <input
                       type="email"
                       value={email}
-                      placeholder="must contain @skcet.ac.in"
+                      placeholder="Enter your email"
                       onChange={handleEmailChange}
                       className={`w-full px-3 py-1 border rounded ${
                         errors.emailError !== '' ? 'border-red-500' : ''
