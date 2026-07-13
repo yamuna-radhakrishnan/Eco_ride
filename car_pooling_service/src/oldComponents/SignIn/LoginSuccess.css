@@ -1,0 +1,26 @@
+#h1 {
+  font-size: 5rem;  
+  font-weight: 700;
+  background: linear-gradient(180deg,#FFE53B , #FF2525);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg,#21D4FD , #B721FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#success {
+    background-image: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    width: 100dvw;
+    height: 91.4dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

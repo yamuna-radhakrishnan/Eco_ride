@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  border: 0;
+  background: " linear-gradient(159deg, #8241cd, #7bfcf9";
+
+  background-image: url("../../assets/signupBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

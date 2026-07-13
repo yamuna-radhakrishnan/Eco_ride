@@ -1,0 +1,19 @@
+.input-address {
+  position: relative;
+  /* top: 12%; */
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.input-address-select {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2%;
+}
+.button-get-address {
+  position: relative;
+  top: 5%;
+  width: 14%;
+}

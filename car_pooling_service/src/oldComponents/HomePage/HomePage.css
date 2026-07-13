@@ -1,0 +1,415 @@
+.container-home {
+  background: linear-gradient(144deg, #af40ff, black 30%, #1852f4);
+  height: 40dvh;
+  position: relative;
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Titillium Web, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.249), rgba(0, 0, 0, 0.5)),
+    url("/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+.text-container {
+  color: white;
+  display: flex;
+
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 15%;
+  height: 35vh;
+  width: 55%;
+}
+.line1 h1 {
+  font-size: 2.25rem;
+  font-weight: 550;
+}
+.main-content h1 {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 3.5vh;
+}
+.line1 {
+  line-height: 5vh;
+}
+.main-content {
+  font-weight: 100;
+  font-size: 0.6rem;
+  position: relative;
+  top: 4%;
+}
+.about {
+  width: 100%;
+  height: max-content;
+
+  align-content: center;
+  text-align: center;
+  margin-bottom: 5dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.homepage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.useService {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  text-align: left;
+}
+
+.use1,
+.use2,
+.use3,
+.use4 {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.use1:hover,
+.use2:hover,
+.use3:hover,
+.use4:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.use1 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  color: #333333;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.use1::before,
+.use1::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.use1::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.use1::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.use1:hover::before,
+.use1:hover:after {
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.use1:hover:after {
+  content: "Our rag pickers are available around the clock to collect you";
+}
+.use2 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  color: #333333;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.use2 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.use2::before,
+.use2::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.use2::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.use2::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.use2:hover::before,
+.use2:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.use2:hover:after {
+  content: "  Our rag pickers are available around the clock to collect you";
+}
+.use2 {
+  position: relative;
+  width: 250px;
+  color: #333333;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.use2::before,
+.use2::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.use2::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.use2::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.use2:hover::before,
+.use2:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.use2:hover:after {
+  content: "  Our rag pickers are available around the clock to collect you";
+}
+.use3 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #333333;
+  cursor: pointer;
+}
+.use3 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: mediumturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.use3::before,
+.use3::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.use3::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.use3::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.use3:hover::before,
+.use3:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.use3:hover:after {
+  content: "  Our rag pickers are available around the clock to collect you";
+}
+.use4 {
+  position: relative;
+  width: 250px;
+  height: 320px;
+
+  color: #f9f9f9;
+  background: hsl(10, 88%, 57%);
+  border: solid black 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.use4::before,
+.use4::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+
+  color: #333333;
+  background-color: white;
+  text-align: center;
+  font-size: large;
+  transition: all 0.5s;
+}
+
+.use4::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.use4::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.use4:hover::before,
+.use4:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.use4:hover:after {
+  content: "  Our rag pickers are available around the clock to collect you";
+}

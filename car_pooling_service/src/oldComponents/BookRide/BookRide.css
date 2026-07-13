@@ -1,0 +1,38 @@
+.sortingContainer {
+  height: 9%;
+
+  align-items: center;
+  align-content: center;
+  background-color: #f6f6f6;
+}
+.containerItems {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  gap: 3%;
+  padding-left: 1%;
+}
+.content {
+  display: flex;
+}
+.ride-papers {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #f6f6f6;
+  height: 77dvh;
+  width: 38%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  padding-right: 1%;
+  overflow-y: scroll;
+}
+.ride-content {
+  padding-top: 2%;
+
+  height: 77dvh;
+  background-color: rgb(255, 255, 255);
+  /* background-color: #f6f6f6; */
+  width: 62%;
+  overflow-y: scroll;
+}
