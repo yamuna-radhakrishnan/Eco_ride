@@ -98,7 +98,7 @@ const Navbar = () => {
 
               <HoverCardContent className="w-40 bg-white p-4 rounded-lg shadow-lg">
                 <Link
-                  to="/passangerSignin"
+                  to="/passangerSignIn"
                   className="block mb-2 hover:bg-blue-100 p-2  rounded"
                 >
                   <Typography
@@ -111,7 +111,7 @@ const Navbar = () => {
 
                 <div className="border-t border-primary my-2"></div>
                 <Link
-                  to="/passangerSignup"
+                  to="/passangerSignUp"
                   className="block hover:bg-blue-100 p-2 rounded"
                 >
                   <Typography

@@ -23,6 +23,7 @@ export default function SignInSide() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [open, setOpen] = React.useState(false)
+  const [errorMessage, setErrorMessage] = React.useState('')
   const vertical = 'top'
   const horizontal = 'right'
 
@@ -46,9 +47,13 @@ export default function SignInSide() {
 
     if (error) {
       console.error('There is an error in login ', error)
+      setErrorMessage(error.message)
       setOpen(true)
       return
     }
+
+    setOpen(false)
+    setErrorMessage('')
 
     if (authData.user) {
       const { data: profile } = await supabase
@@ -112,7 +117,7 @@ export default function SignInSide() {
                 variant="filled"
                 sx={{ width: '100%' }}
               >
-                Error Invalid credentials. Please try again!
+                {errorMessage || 'An error occurred. Please try again!'}
               </Alert>
             </Snackbar>
             <img

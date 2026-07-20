@@ -22,6 +22,7 @@ export default function PassangerSignIn() {
   const [password, setPassword] = useState('')
   const dispatch = useDispatch()
   const [open, setOpen] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
   const vertical = 'top'
   const horizontal = 'right'
 
@@ -43,9 +44,12 @@ export default function PassangerSignIn() {
 
     if (error) {
       console.error('There is an error in Signin ', error)
+      setErrorMessage(error.message)
       setOpen(true)
       return
     }
+
+    setErrorMessage('')
 
     if (authData.user) {
       const { data: profile } = await supabase
@@ -81,7 +85,7 @@ export default function PassangerSignIn() {
           variant="filled"
           sx={{ width: '100%' }}
         >
-          Error Invalid credentials. Please try again!
+          {errorMessage || 'An error occurred. Please try again!'}
         </Alert>
       </Snackbar>
       <div className="mx-auto flex justify-evenly items-center p-4 gap-28">
